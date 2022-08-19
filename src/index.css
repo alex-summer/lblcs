@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css2?family=Boogaloo&display=swap);
+
+body {
+  margin: 0;
+  font-family: Boogaloo;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #030713;
+  color: white;
+}
+
+section {
+  margin: 0px;
+  width: 100%;
+  padding-top: 5%;
+}
+h1 {
+  width: 50%;
+  margin: auto;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color : inherit;
+  text-decoration: none;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
