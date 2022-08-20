@@ -41,31 +41,30 @@ nav {
         display: none;
         margin-top: 1000px;
     }
+    .nav-logo{
+        width: 50%;
+    }
+    .activeDrop {
+        display: block ;
+        width: 100%;
+        margin-top: 8%;
+        padding: 0px;
+        animation: fadein 2s;
+        position: absolute;
+     }
     .activeDrop a {
         display: block;
-        border-bottom: 1px solid #EAEAEB;
-        background-color: white;
-        opacity: .9;
-        color: gray;
+        background-color: #030713;
+        opacity: .5;
+        color: white;
         text-align: center;
         transition: 2s;
-}
-   .nav-logo{
-       width: 50%;
-   }
-   .activeDrop {
-       display: block ;
-       width: 100%;
-       margin-top: 11%;
-       padding: 0px;
-       animation: fadein 2s;
-       position: absolute;
-    }
-    .activeDrop a {
         margin:0px;
         padding: 0px;
+}
+    .activeDrop a:hover {
+        opacity: 1;
     }
-   
 }
 @keyframes fadein {
     from { opacity: 0; }

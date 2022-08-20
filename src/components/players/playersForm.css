@@ -1,0 +1,43 @@
+.form-container {
+    text-align: center;
+    display: block;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+}
+.close {
+    position: absolute;
+    right: 5%;
+    width: 0%;
+    margin: 0px;
+}
+
+
+.listItem {
+    display: grid;
+    grid-template-areas:
+        "pfp lolname"
+        "pfp team";
+    background-color: rgba(170, 76, 76, .5);
+    color: #FFFF;
+    -webkit-text-stroke: 1.5px black; /* width and color */
+    width: 50%;
+    height: auto;
+    margin: 50px auto 50px;
+    border-radius: 16px;
+}
+
+.pfp {
+    grid-area: pfp;
+    margin: auto;
+}
+
+.lolname {
+    grid-area: lolname;
+}
+.team {
+    grid-area: team;
+}
