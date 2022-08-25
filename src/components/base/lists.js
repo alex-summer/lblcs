@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import PlayerForm from "./playersForm";
 import networkService from "../../services/network";
 import ListItem from "./listItem";
 
-const Lists = (pageTitle, url) => {
+const Lists = (props) => {
   const [formOpen, setFormOpen] = useState(false);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    networkService.getAll(url).then((initialItems) => setItems(initialItems));
+    networkService.getAll(props.url).then((initialItems) => setItems(initialItems));
   }, [url]);
   return (
     <div>
