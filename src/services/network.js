@@ -1,13 +1,11 @@
-const baseUrl = "http://localhost:3001/players";
-
-const getAll = () => {
-  const request = fetch(baseUrl);
+const getAll = (url) => {
+  const request = fetch(url);
 
   return request.then((response) => response.json());
 };
 
-const create = async (newObject) => {
-  const response = await fetch(baseUrl, {
+const create = async (newObject, url) => {
+  const response = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

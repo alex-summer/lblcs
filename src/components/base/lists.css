@@ -1,0 +1,25 @@
+.listItem {
+    display: grid;
+    grid-template-areas:
+        "icon item1"
+        "icon item2";
+    background-color: rgba(170, 76, 76, .5);
+    color: #FFFF;
+    -webkit-text-stroke: 1.5px black; /* width and color */
+    width: 50%;
+    height: auto;
+    margin: 50px auto 50px;
+    border-radius: 16px;
+}
+
+.icon {
+    grid-area: pfp;
+    margin: auto;
+}
+
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}

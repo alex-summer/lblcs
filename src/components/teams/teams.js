@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PlayerForm from "./playersForm";
-import networkService from "../../services/network";
-import ListItem from "../base/listItem";
+import playerService from "../../services/players";
+import Team from "./team";
 
 const Players = () => {
   const [formOpen, setFormOpen] = useState(false);
@@ -13,26 +13,22 @@ const Players = () => {
   });
 
   useEffect(() => {
-    networkService
-      .getAll("http://localhost:3001/players")
-      .then((initialplayers) => setPlayers(initialplayers));
+    playerService.getAll().then((initialplayers) => setPlayers(initialplayers));
   }, []);
 
   const closeForm = () => setFormOpen(false);
 
   const addPlayer = (event) => {
     event.preventDefault();
-    networkService
-      .create(newPlayer, "http://localhost:3001/players")
-      .then((response) => {
-        setFormOpen(false);
-        setPlayers(players.concat(response));
-        setNewPlayer({
-          lolname: "",
-          discordtag: "",
-          team: "",
-        });
+    playerService.create(newPlayer).then((response) => {
+      setFormOpen(false);
+      setPlayers(players.concat(response));
+      setNewPlayer({
+        lolname: "",
+        discordtag: "",
+        team: "",
       });
+    });
   };
   const trackChange = (event) => {
     const { name, value } = event.target;
@@ -53,10 +49,11 @@ const Players = () => {
           onChange={trackChange}
         />
       )}
-      {players.map((player) => (
-        <ListItem key={player.id} player={player} />
+      {players.map((team) => (
+        <Team key={team.id} team={team} />
       ))}
     </div>
   );
 };
+
 export default Players;
