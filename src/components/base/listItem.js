@@ -1,5 +1,5 @@
 import "../base/lists.css";
-import icon from "../../assets/pfp.png";
+import icon from "../../assets/logo.png";
 
 const ListItem = (item1, item2) => {
   return (

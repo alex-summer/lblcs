@@ -12,6 +12,7 @@ const create = async (newObject, url) => {
     },
     body: JSON.stringify(newObject),
   });
+  console.log(response)
   return response.json();
 };
 

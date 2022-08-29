@@ -3,16 +3,15 @@ import networkService from "../../services/network";
 import ListItem from "./listItem";
 
 const Lists = (props) => {
-  const [formOpen, setFormOpen] = useState(false);
+
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     networkService.getAll(props.url).then((initialItems) => setItems(initialItems));
-  }, [url]);
+  }, [props.url]);
   return (
     <div>
-      <h1>{pageTitle}</h1>
-      <button onClick={() => setFormOpen(true)}>New Player</button>
+      <h1>{props.pageTitle}</h1>
       {items.map((item) => (
         <ListItem key={item.id} player={item} />
       ))}
