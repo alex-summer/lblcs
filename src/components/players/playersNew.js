@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 
 const Players = () => {
-    const url = 'http://localhost:3000/players'
+    const url = 'http://localhost:3001/players'
     const pageTitle = 'Players'
     const [formOpen, setFormOpen] = useState(false);
 

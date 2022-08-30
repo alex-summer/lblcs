@@ -1,6 +1,7 @@
 {
     "players": [
         {
+            "id": "Cloudturtle",
             "lolname": "Cloud Turtle",
             "discordtag": "cloudturtle#9999",
             "team": "Panther Corps Highlanders"

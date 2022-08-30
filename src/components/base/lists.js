@@ -13,7 +13,7 @@ const Lists = (props) => {
     <div>
       <h1>{props.pageTitle}</h1>
       {items.map((item) => (
-        <ListItem key={item.id} player={item} />
+        <ListItem key={item.id} item1={item.lolname} item2={item.discordtag} />
       ))}
     </div>
   );
