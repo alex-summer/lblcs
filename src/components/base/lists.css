@@ -3,9 +3,9 @@
     grid-template-areas:
         "icon item1"
         "icon item2";
-    background-color: rgba(170, 76, 76, .5);
+    background-color: #0C1430;
     color: #FFFF;
-    -webkit-text-stroke: 1.5px black; /* width and color */
+    /* width and color */
     width: 50%;
     height: auto;
     margin: 50px auto 50px;
@@ -13,13 +13,16 @@
 }
 
 .icon {
-    grid-area: pfp;
+    grid-area: icon;
     margin: auto;
+    height: 192px;
+    width: 192px;
 }
 
 .item1 {
     grid-area: item1;
 }
+
 .item2 {
     grid-area: item2;
 }

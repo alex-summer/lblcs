@@ -1,7 +1,7 @@
 import "../base/lists.css";
-import icon from "../../assets/logo.png";
+import icon from "../../assets/coins.png";
 
-const ListItem = (item1, item2) => {
+const ListItem = ({ item1, item2 }) => {
   return (
     <li>
       <div className="listItem">
