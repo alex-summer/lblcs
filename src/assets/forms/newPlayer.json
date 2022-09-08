@@ -1,0 +1,12 @@
+{
+    "items": [
+        {
+            "name": "lol name",
+            "type": "textbox"
+        },
+        {
+            "name": "Discord Tag",
+            "type": "textbox"
+        }
+    ]
+}

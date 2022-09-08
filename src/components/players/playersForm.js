@@ -17,10 +17,6 @@ const PlayerForm = ({ onClick, onSubmit, onChange }) => {
           <input type="text" name="discordtag" />
         </div>
         <div>
-          <label htmlFor="team">Team: </label>
-          <input type="text" name="team" />
-        </div>
-        <div>
           <button>Submit</button>
         </div>
       </form>

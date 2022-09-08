@@ -1,28 +1,14 @@
+.list {
+    display: flexbox;
+    justify-content: flex-start;
+}
+
 .listItem {
-    display: grid;
-    grid-template-areas:
-        "icon item1"
-        "icon item2";
+
     background-color: #0C1430;
     color: #FFFF;
-    /* width and color */
-    width: 50%;
+    width: fit-content;
     height: auto;
-    margin: 50px auto 50px;
-    border-radius: 16px;
-}
-
-.icon {
-    grid-area: icon;
-    margin: auto;
-    height: 192px;
-    width: 192px;
-}
-
-.item1 {
-    grid-area: item1;
-}
-
-.item2 {
-    grid-area: item2;
+    cursor: pointer;
+    padding: 10px;
 }
